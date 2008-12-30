@@ -1,0 +1,42 @@
+p.notice,
+p.warning,
+p.error {
+  font-size: 18px;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+}
+
+p.notice span,
+p.warning span,
+p.error span {
+  float: left;
+  width: 42px;
+  height: 32px;
+  margin-top: -5px;
+}
+
+p.notice {
+  background: url(../images/flash-notice-bg.jpg) repeat-x left top;
+  color: #41612f; 
+}
+p.notice span {
+  background: url(../images/check.png) no-repeat left top;
+}
+
+p.warning {
+  background: url(../images/flash-warning-bg.jpg) repeat-x left -10px;
+  color: #a26a1a;
+}
+p.warning span {
+  margin-top: -6px;
+  background: url(../images/warning.png) no-repeat left top;
+}
+
+p.error {
+  background: url(../images/flash-error-bg.jpg) repeat-x left -10px;
+  color: #af0100;
+}
+p.error span {
+  margin-top: -6px;
+  background: url(../images/error.png) no-repeat left top;
+}
