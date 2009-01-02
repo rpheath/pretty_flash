@@ -13,8 +13,8 @@ namespace :pretty_flash do
         puts " - copying %s to %s" % [File.basename(asset), destination.gsub(Rails.root, '')]
         FileUtils.cp asset, destination
       end
-      
-      puts " - done."
     end
+    
+    puts " - done."
   end
 end
