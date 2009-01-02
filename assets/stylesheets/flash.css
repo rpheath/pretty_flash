@@ -20,7 +20,7 @@ p.notice {
   color: #41612f; 
 }
 p.notice span {
-  background: url(../images/check.png) no-repeat left top;
+  background: url(../images/flash-check.png) no-repeat left top;
 }
 
 p.warning {
@@ -29,7 +29,7 @@ p.warning {
 }
 p.warning span {
   margin-top: -6px;
-  background: url(../images/warning.png) no-repeat left top;
+  background: url(../images/flash-warning.png) no-repeat left top;
 }
 
 p.error {
@@ -38,5 +38,5 @@ p.error {
 }
 p.error span {
   margin-top: -6px;
-  background: url(../images/error.png) no-repeat left top;
+  background: url(../images/flash-error.png) no-repeat left top;
 }
