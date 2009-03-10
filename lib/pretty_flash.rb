@@ -1,16 +1,16 @@
 module RPH
   module PrettyFlash
     module ControllerMethods
-      def notice(msg)
-        flash[:notice] = msg
-      end
-    
-      def warning(msg)
-        flash[:warning] = msg
-      end
-    
-      def error(msg)
-        flash[:error] = msg
+      TYPES = [:notice, :warning, :error]
+      
+      TYPES.each do |type|
+        define_method(type) do |msg|
+          flash[type] = msg
+        end
+        
+        define_method("#{type}_now") do |msg|
+          flash.now[type] = msg
+        end
       end
     end
   
